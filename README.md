@@ -14,7 +14,7 @@ The approach was inspired by Mark Longair's blog post:
 [Open Data GB Postcode Unit Boundaries](https://longair.net/blog/2021/08/23/open-data-gb-postcode-unit-boundaries/)
 
 Mark's Voronoi-processed postcode data, derived from Mapit, is also available as PMTiles:
-[github.com/markmclaren/mapit-postcode-pmtiles](https://github.com/markmclaren/mapit-postcode-pmtiles)
+[github.com/markmclaren/mapit-postcode-pmtiles](https://github.com/markmclaren/mapit-postcode-pmtiles) — [live viewer](https://markmclaren.github.io/mapit-postcode-pmtiles/)
 
 ---
 
