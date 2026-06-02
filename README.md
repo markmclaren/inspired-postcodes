@@ -65,7 +65,7 @@ Source code and Slurm job scripts: [github.com/markmclaren/isambard-postcodes](h
 
 ## Licence
 
-Contains HM Land Registry data © Crown copyright and database right 2025.
-Contains National Statistics data © Crown copyright and database right 2025.
+Contains HM Land Registry data © Crown copyright and database right 2025.   
+Contains National Statistics data © Crown copyright and database right 2025.   
 Licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 
