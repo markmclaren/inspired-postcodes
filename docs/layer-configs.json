@@ -1,0 +1,68 @@
+[
+  {
+    "id": "original",
+    "name": "Original INSPIRE",
+    "file": "https://huggingface.co/datasets/markmclaren/inspired-postcodes/resolve/main/inspire_original.pmtiles",
+    "sourceLayer": "inspire",
+    "defaultFillColor": "#3b82f6",
+    "defaultStrokeColor": "#1d4ed8",
+    "defaultFillOpacity": 0.2,
+    "defaultStrokeWidth": 1.5,
+    "description": "Original INSPIRE index boundary polygons. Detailed unit-level postcode areas (e.g. AB10 1AB)."
+  },
+  {
+    "id": "area-dissolved",
+    "name": "Area Dissolved",
+    "file": "https://huggingface.co/datasets/markmclaren/inspired-postcodes/resolve/main/inspire_area_dissolved_pcds.pmtiles",
+    "sourceLayer": "pcds_area_dissolved",
+    "defaultFillColor": "#f97316",
+    "defaultStrokeColor": "#c2410c",
+    "defaultFillOpacity": 0.2,
+    "defaultStrokeWidth": 2.0,
+    "description": "INSPIRE postcodes dissolved by area. Top-level postcode areas (e.g. AB, EH, SW)."
+  },
+  {
+    "id": "district-dissolved",
+    "name": "District Dissolved",
+    "file": "https://huggingface.co/datasets/markmclaren/inspired-postcodes/resolve/main/inspire_district_dissolved_pcds.pmtiles",
+    "sourceLayer": "pcds_district_dissolved",
+    "defaultFillColor": "#ec4899",
+    "defaultStrokeColor": "#9d174d",
+    "defaultFillOpacity": 0.2,
+    "defaultStrokeWidth": 1.5,
+    "description": "INSPIRE postcodes dissolved by district. Postcode districts (e.g. AB10, EH1, SW1A)."
+  },
+  {
+    "id": "sector-dissolved",
+    "name": "Sector Dissolved",
+    "file": "https://huggingface.co/datasets/markmclaren/inspired-postcodes/resolve/main/inspire_sector_dissolved_pcds.pmtiles",
+    "sourceLayer": "pcds_sector_dissolved",
+    "defaultFillColor": "#14b8a6",
+    "defaultStrokeColor": "#0f766e",
+    "defaultFillOpacity": 0.2,
+    "defaultStrokeWidth": 1.2,
+    "description": "INSPIRE postcodes dissolved by sector. Postcode sectors (e.g. AB10 1, EH1 2, SW1A 1)."
+  },
+  {
+    "id": "single",
+    "name": "Single Postcodes",
+    "file": "https://huggingface.co/datasets/markmclaren/inspired-postcodes/resolve/main/inspire_single_pcds.pmtiles",
+    "sourceLayer": "inspire",
+    "defaultFillColor": "#10b981",
+    "defaultStrokeColor": "#047857",
+    "defaultFillOpacity": 0.25,
+    "defaultStrokeWidth": 1.2,
+    "description": "Individual postcode point locations or single bounds. Detailed unit-level postcode areas (e.g. AB10 1AB)."
+  },
+  {
+    "id": "dissolved",
+    "name": "Dissolved Postcodes", 
+    "file": "https://huggingface.co/datasets/markmclaren/inspired-postcodes/resolve/main/inspire_dissolved_pcds.pmtiles",
+    "sourceLayer": "pcds_dissolved",
+    "defaultFillColor": "#a855f7",
+    "defaultStrokeColor": "#7e22ce",
+    "defaultFillOpacity": 0.15,
+    "defaultStrokeWidth": 2.0,
+    "description": "Dissolved postcode boundary polygons. Detailed unit-level postcode areas (e.g. AB10 1AB)."
+  }
+]

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSPIRE Test PMTiles Inspector</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- MapLibre GL JS -->
+  <link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+
+  <!-- PMTiles JS Client -->
+  <script src="https://unpkg.com/pmtiles@3.2.0/dist/pmtiles.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    
+    <!-- Floating toggle button for sidebar -->
+    <button class="floating-toggle-btn" id="sidebar-expand-btn" title="Expand Sidebar">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Sidebar Panel -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h1 class="brand-title">
+          <i data-lucide="map-pin"></i>
+          INSPIRE PMTiles
+        </h1>
+        <button class="sidebar-toggle-btn" id="sidebar-collapse-btn" title="Collapse Sidebar">
+          <i data-lucide="chevron-left"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        
+        <!-- Feature Inspector -->
+        <details class="panel-section" open id="inspector-section">
+          <summary>
+            <span class="summary-title-wrapper">
+              <i data-lucide="info"></i> Feature Inspector
+            </span>
+            <i data-lucide="chevron-down" class="section-chevron"></i>
+          </summary>
+          <div class="section-body" id="inspector-body">
+            <div class="inspector-placeholder" id="inspector-placeholder">
+              <i data-lucide="mouse-pointer-click" style="width: 24px; height: 24px;"></i>
+              Click on an INSPIRE region on the map to inspect its attributes.
+            </div>
+            <div class="inspector-content" id="inspector-content" style="display: none;">
+              <!-- Inspected features details go here -->
+            </div>
+          </div>
+        </details>
+
+        <!-- Zoom Display / Controls -->
+        <details class="panel-section" open>
+          <summary>
+            <span class="summary-title-wrapper">
+              <i data-lucide="zoom-in"></i> Zoom
+            </span>
+            <i data-lucide="chevron-down" class="section-chevron"></i>
+          </summary>
+          <div class="section-body">
+            <div id="zoom-display">Zoom: --</div>
+          </div>
+        </details>
+
+        <!-- Layers & Styling -->
+        <details class="panel-section" open>
+          <summary>
+            <span class="summary-title-wrapper">
+              <i data-lucide="layers"></i> Layers & Styling
+            </span>
+            <i data-lucide="chevron-down" class="section-chevron"></i>
+          </summary>
+          <div class="section-body" id="layers-container">
+            <!-- Layers will be populated dynamically -->
+          </div>
+        </details>
+
+        <!-- PMTiles Metadata -->
+        <details class="panel-section">
+          <summary>
+            <span class="summary-title-wrapper">
+              <i data-lucide="database"></i> PMTiles File Metadata
+            </span>
+            <i data-lucide="chevron-down" class="section-chevron"></i>
+          </summary>
+          <div class="section-body" id="metadata-container">
+            <!-- File metadata will be loaded dynamically -->
+          </div>
+        </details>
+
+        <div class="footer-credits">
+          Basemap: <a href="https://openfreemap.org/" target="_blank">OpenFreeMap</a> (Bright theme) | <a href="index.html">Postcode Inspector</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Map container -->
+    <main id="map"></main>
+
+  </div>
+
+  <!-- Toast notifications container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- External Script -->
+  <script defer src="inspire.js"></script>
+</body>
+</html>
