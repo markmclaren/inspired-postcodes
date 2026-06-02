@@ -59,8 +59,6 @@ The pipeline was run on the [Isambard 3](https://docs.isambard.ac.uk/) HPC syste
 7. Merge all per-council MBTiles with `tile-join` and convert to PMTiles.
 8. Dissolve the single-postcode layer progressively by postcode unit, sector, district, and area to produce the four dissolved layers.
 
-Source code and Slurm job scripts: [github.com/markmclaren/isambard-postcodes](https://github.com/markmclaren/isambard-postcodes)
-
 ---
 
 ## Licence
